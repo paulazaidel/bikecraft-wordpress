@@ -15,7 +15,7 @@
 
 		<link rel="shortcut icon" href="favicon.ico">
 
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
 		<script src="js/libs/modernizr.custom.45655.js"></script>
 	</head>
 	<body>
@@ -23,7 +23,7 @@
 		<header class="header">
 			<div class="container">
 				<a href="index.html" class="grid-4">
-					<img src="img/bikcraft.png" alt="Bikcraft">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/bikcraft.png" alt="Bikcraft">
 				</a>
 				<nav class="grid-12 header_menu">
 					<ul>
@@ -73,15 +73,15 @@
 				<ul class="portfolio_lista rslides_portfolio">
 
 					<li>
-						<div class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retrô"></div>
-						<div class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></div>
-						<div class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></div>
+						<div class="grid-8"><img src="portfolio/retro.jpg" alt="Bicicleta Retrô"></div>
+						<div class="grid-8"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></div>
+						<div class="grid-16"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></div>
 					</li>
 
 					<li>
-						<div class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></div>
-						<div class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retrô"></div>
-						<div class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></div>
+						<div class="grid-8"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></div>
+						<div class="grid-8"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/portfolio/retro.jpg" alt="Bicicleta Retrô"></div>
+						<div class="grid-16"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></div>
 					</li>
 
 				</ul>
@@ -116,9 +116,9 @@
 					<div class="grid-4 footer_redes">
 						<h3>Contato</h3>
 						<ul>
-							<li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.png" alt="Facebook Bikcraft"></a></li>
-							<li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.png" alt="Instagram Bikcraft"></a></li>
-							<li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.png" alt="Twitter Bikcraft"></a></li>
+							<li><a href="http://facebook.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/redes-sociais/facebook.png" alt="Facebook Bikcraft"></a></li>
+							<li><a href="http://instagram.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/redes-sociais/instagram.png" alt="Instagram Bikcraft"></a></li>
+							<li><a href="http://twitter.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/redes-sociais/twitter.png" alt="Twitter Bikcraft"></a></li>
 						</ul>
 					</div>
 
