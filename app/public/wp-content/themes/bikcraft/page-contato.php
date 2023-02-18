@@ -2,10 +2,11 @@
 // Template Name: Contato
 ?>
 
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <?php get_header(); ?>
 		<section class="introducao-interna interna_contato">
 			<div class="container">
-				<h1>Contato</h1>
+				<h1><?php the_title(); ?></h1>
 				<p>tire suas dúvidas com a gente</p>
 			</div>
 		</section>
@@ -48,4 +49,5 @@
 		<section class="container contato_mapa">
 			<a href="http://google.com" target="_blank" class="grid-16"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"></a>
 		</section>
+<?php endwhile; endif; ?>
 <?php get_footer(); ?>

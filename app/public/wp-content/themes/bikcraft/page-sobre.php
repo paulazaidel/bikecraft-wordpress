@@ -3,9 +3,10 @@
 ?>
 
 <?php get_header(); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<section class="introducao-interna interna_sobre">
 			<div class="container">
-				<h1>Sobre</h1>
+				<h1><?php the_title(); ?></h1>
 				<p>conheça mais sobre a bikcraft</p>
 			</div>
 		</section>
@@ -50,4 +51,5 @@
 				</li>
 			</ul>
 		</section>
+<?php endwhile; endif; ?>
 <?php get_footer(); ?>

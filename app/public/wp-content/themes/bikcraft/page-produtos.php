@@ -3,9 +3,10 @@
 ?>
 
 <?php get_header(); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<section class="introducao-interna interna_produtos">
 			<div class="container">
-				<h1>Produtos</h1>
+				<h1><?php the_title(); ?></h1>
 				<p>conheça todos os nossos produtos</p>
 			</div>
 		</section>
@@ -101,4 +102,5 @@
 				</div>
 			</div>
 		</section>
+<?php endwhile; endif; ?>
 <?php get_footer(); ?>

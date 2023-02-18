@@ -3,6 +3,7 @@
 ?>
 
 <?php get_header(); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <section class="introducao">
     <div class="container">
         <h1>Bicicletas Feitas a Mão</h1>
@@ -89,4 +90,5 @@
         <a href="sobre.html" class="btn btn-preto">Sobre</a>
     </div>
 </section>
+<?php endwhile; endif; ?>
 <?php get_footer(); ?>

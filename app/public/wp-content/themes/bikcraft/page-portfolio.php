@@ -3,9 +3,10 @@
 ?>
 
 <?php get_header(); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<section class="introducao-interna interna_portfolio">
 			<div class="container">
-				<h1>Portfólio</h1>
+				<h1><?php the_title(); ?></h1>
 				<p>conheça os projetos que amamos mostrar</p>
 			</div>
 		</section>
@@ -54,4 +55,5 @@
 				</ul>
 			</div>
 		</section>
+<?php endwhile; endif; ?>
 <?php get_footer(); ?>
