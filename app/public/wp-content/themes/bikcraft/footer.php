@@ -31,7 +31,7 @@
     </div>
     <div class="copy">
         <div class="container">
-            <p class="grid-16">Bikcraft 2015 - Alguns direitos reservados.</p>
+            <p class="grid-16"><?php bloginfo('name') ?> <?php echo date('Y') ?> - Alguns direitos reservados.</p>
         </div>
     </div>
 </footer>
