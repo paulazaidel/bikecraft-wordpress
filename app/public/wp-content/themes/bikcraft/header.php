@@ -11,8 +11,6 @@
         <meta property="og:image" content="http://bikcraft.com/img/og-image.png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
-        <script src="js/libs/modernizr.custom.45655.js"></script>
 
 		<!-- Start Wordpress Header -->
 		<?php wp_head(); ?>
