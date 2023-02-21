@@ -7,24 +7,29 @@
 		<?php include(TEMPLATEPATH . "/includes/introduction.php") ?>
 
 
+		<?php
+			$args = array (
+				'post_type' => 'produtos',
+				'order'   => 'ASC'
+			);
+			$the_query = new WP_Query ( $args );
+		?>
+
+		<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
 		<section class="container produto_item animar-interno">
+			<a href="<?php the_permalink(); ?>">
 			<div class="grid-11">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/produtos/bikcraft-passeio-1.jpg" alt="Bikcraft Passeio">
-				<h2>Passeio</h2>
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/produtos/bikcraft-passeio-1.jpg" alt="Bikcraft Passeio">
+				<h2><?php the_title(); ?></h2>
 			</div>
 			<div class="grid-5 produto_icone"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/produtos/passeio.png" alt="Icone Passeio"></div>
-			<div class="grid-8"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/produtos/bikcraft-passeio-2.jpg" alt="Bikcraft Passeio"></div>
-			<div class="grid-8 produto_info">
-				<p>Muito melhor do que passear pela orla a vidros fechados. A Bikcraft Passeio é uma bicicleta que une conforto e praticidade para o seu dia a dia. Você nunca mais vai querer saber de outra.</p>
-				<ul>
-					<li>Conforto</li>
-					<li>Praticidade</li>
-					<li>Design</li>
-					<li>Versatilidade</li>
-				</ul>
-			</div>
+			</a>
 		</section>
 
+		<?php endwhile; else: endif; ?>
+		<?php wp_reset_query(); wp_reset_postdata(); ?>
+		
 		<section class="container produto_item">
 			<div class="grid-11">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/produtos/bikcraft-esporte-1.jpg" alt="Bikcraft Esporte">
